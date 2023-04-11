@@ -6,27 +6,20 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import Texto from '../../../src/componentes/Texto.js';
 
-import Logo from '../../../assets/logo.png';
+//import Logo from '../../../assets/logo.png';
 
 import Topo from '../../../src/componentes/topo.js';
-
+import Detalhes from '../../../src/componentes/detalhes.js';
 
 export default  function Cesta(){
 
 
    return  <>
     <Topo/>
-    <View style={estilos.cesta} >
-        <Texto style={estilos.nome}>Cesta de Verduras</Texto>
-        <View style={estilos.fazenda}>  
-            <Image source={Logo} style={estilos.imagemFazenda} /> 
-            <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
-            
-        </View>
-        <Texto style={estilos.descricao}>Uma cesta com produtos selecionados cuidadozamente da fazenda direto para cozinha</Texto>
-        <Texto style={estilos.preco}> R$:40,00</Texto>
-
+    <View style={estilos.cesta}>
+        <Detalhes />
     </View>
+    
     </>
 }
 
