@@ -1,4 +1,5 @@
 
+import mock from './src/mocks/cesta'
 import { StatusBar, SafeAreaView ,StyleSheet,  View } from 'react-native';
 
 import { 
@@ -7,7 +8,7 @@ import {
     Montserrat_700Bold } 
     from '@expo-google-fonts/montserrat';
 
-import Cesta from './src/telas/Cesta/'
+    import Cesta from './src/telas/Cesta/'
 
 export default function App() {
   const [fontCarregada] = useFonts(
@@ -24,7 +25,7 @@ export default function App() {
   return (
     <View>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
       
     </View>
   );

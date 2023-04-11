@@ -7,10 +7,10 @@ import Texto from '../../src/componentes/Texto.js'
 
 import topo from '../../assets/topo.png'
 
-export default function Topo(){
+export default function Topo({ titulo }){
     return <>   
     <Image source={Topoimg} style={estilos.Topo} /> 
-    <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
+    <Texto style={estilos.titulo}>{ titulo }</Texto>
     </>
 }
 

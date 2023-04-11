@@ -6,18 +6,18 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import Texto from '../../../src/componentes/Texto.js';
 
-//import Logo from '../../../assets/logo.png';
+//
 
 import Topo from '../../../src/componentes/topo.js';
 import Detalhes from '../../../src/componentes/detalhes.js';
 
-export default  function Cesta(){
+export default  function Cesta({topo, detalhes}){
 
 
    return  <>
-    <Topo/>
+    <Topo {...topo}/>
     <View style={estilos.cesta}>
-        <Detalhes />
+        <Detalhes {...detalhes} />
     </View>
     
     </>
